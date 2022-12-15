@@ -1,0 +1,22 @@
+@import "../../Styles/variables.scss";
+
+.socialButton {
+	height: 5vh;
+	min-height: 2rem;
+	width: 5vh;
+	min-width: 2rem;
+	background-color: $celeste;
+	border: 2px solid black;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	svg {
+		height: 60%;
+		width: 60%;
+	}
+}
+.socialButton:hover {
+	transform: scale(1.1);
+}

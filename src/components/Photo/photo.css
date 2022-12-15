@@ -1,0 +1,28 @@
+.photo{
+    width: 16%;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    animation: aparecer .8s;
+    z-index: 1;
+}
+
+@media (max-width: 800px) {
+    .photo{
+        width: 22%;
+        position: relative;
+        top: -25%;
+        left: 0;
+        right: 0;
+    }
+}
+
+@keyframes aparecer{
+    from{
+        transform: translateX(-200%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}

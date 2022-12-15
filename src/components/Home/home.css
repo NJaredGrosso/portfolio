@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap");
+#Home {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #Home #shadow {
+    height: 57%;
+    min-height: 15rem;
+    width: 45%;
+    min-width: 20rem;
+    border-radius: 4vw;
+    background-color: #787878;
+    border: 0.35rem solid #787878;
+    position: absolute;
+    z-index: 0;
+    transform: scale(0.6) translate(30%, -30%); }
+  #Home #tarjetaPresentacion {
+    height: 57%;
+    min-height: 12rem;
+    width: 35%;
+    min-width: 15rem;
+    padding: 1%;
+    background-color: #f4ffff;
+    border: 0.35rem solid #787878;
+    border-radius: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    animation: move 0.8s;
+    z-index: 1;
+    filter: drop-shadow(1vw 1vw 4px #78787880); }
+    #Home #tarjetaPresentacion #nombres {
+      font-size: calc(7px + 1.4vw);
+      margin-bottom: 8%; }
+      #Home #tarjetaPresentacion #nombres #nombre {
+        font-weight: lighter; }
+      #Home #tarjetaPresentacion #nombres #apellido {
+        font-weight: lighter;
+        color: #00b9b9; }
+    #Home #tarjetaPresentacion #webDevs {
+      height: 40%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center; }
+      #Home #tarjetaPresentacion #webDevs .webDev {
+        font-size: 1.8vw;
+        font-weight: lighter; }
+      #Home #tarjetaPresentacion #webDevs .borroso {
+        transform: scale(0.8) translatex(-10%);
+        filter: blur(3px); }
+  #Home #socialNetworks {
+    position: absolute;
+    right: 3%;
+    bottom: 4vh;
+    gap: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1; }
+  #Home #circuits {
+    width: 20vw;
+    max-width: 18rem;
+    min-width: 10rem;
+    position: fixed;
+    bottom: -4vw;
+    left: -5px;
+    transform: rotate(45deg);
+    z-index: 0; }
+
+@keyframes move {
+  from {
+    transform: scale(0.77) translate(30%, -30%); }
+  to {
+    transform: scale(1) translateY(0); } }
+
+@media (max-width: 1024px) {
+  #Home #shadow {
+    height: 40%; }
+  #Home #tarjetaPresentacion {
+    height: 40%; } }
+
+@media (max-width: 800px) {
+  #Home {
+    display: flex;
+    flex-direction: column; }
+    #Home #shadow {
+      transform: scale(0.6) translate(30%, -45%); }
+    #Home #tarjetaPresentacion {
+      position: relative;
+      top: -10%; }
+    #Home #socialNetworks {
+      position: relative;
+      bottom: -10%;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: row; } }
