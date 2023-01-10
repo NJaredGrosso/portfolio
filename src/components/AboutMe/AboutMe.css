@@ -3,37 +3,41 @@
 /*Colors*/
 .aboutMe {
   height: 100%;
+  min-height: fit-content;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between; }
   .aboutMe .mainInfo {
-    height: 80%;
+    height: 100%;
     width: 60%;
     padding: 20px;
     font-family: "Inter", sans-serif; }
-    .aboutMe .mainInfo .nombre {
-      width: 100%;
-      font-size: calc(7px + 1.4vw);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-end; }
-      .aboutMe .mainInfo .nombre .nombres {
-        font-weight: lighter; }
-      .aboutMe .mainInfo .nombre .apellidos {
-        font-size: larger;
-        text-align: left;
+    .aboutMe .mainInfo .content {
+      height: 100%;
+      min-height: 65vh; }
+      .aboutMe .mainInfo .content .nombre {
+        width: 100%;
+        font-size: calc(7px + 1.4vw);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end; }
+        .aboutMe .mainInfo .content .nombre .nombres {
+          font-weight: lighter; }
+        .aboutMe .mainInfo .content .nombre .apellidos {
+          font-size: larger;
+          text-align: left;
+          font-weight: lighter;
+          color: #00b9b9; }
+      .aboutMe .mainInfo .content .info {
+        height: 45vh;
+        width: 100%;
+        font-size: calc(10px + 1.4vw);
         font-weight: lighter;
-        color: #00b9b9; }
-    .aboutMe .mainInfo .info {
-      height: 45vh;
-      width: 100%;
-      font-size: calc(10px + 1.4vw);
-      font-weight: lighter;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
   .aboutMe .globoTechs {
     min-height: 350px;
     height: 350px;
@@ -79,6 +83,11 @@
     rotate: 0; }
   to {
     rotate: -360deg; } }
+
+@media (min-width: 1660px) {
+  .info {
+    position: relative;
+    top: 40px; } }
 
 @media (max-width: 800px) {
   .aboutMe {
