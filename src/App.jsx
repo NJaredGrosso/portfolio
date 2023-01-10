@@ -3,6 +3,7 @@ import "./Styles/App.css";
 import NavBar from "./components/NavBar/NavBar";
 import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
+import AboutMe from "./components/AboutMe/AboutMe";
 
 function App() {
 	return (
@@ -10,8 +11,9 @@ function App() {
 			<BrowserRouter>
 				<NavBar />
 				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/projects" element={<Projects />} />
+					<Route path="/Portfolio" element={<Home />} />
+					<Route path="/Portfolio/projects" element={<Projects />} />
+					<Route path="/Portfolio/about-me" element={<AboutMe />} />
 				</Routes>
 			</BrowserRouter>
 		</div>

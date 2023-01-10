@@ -1,0 +1,94 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap");
+/*Colors*/
+.aboutMe {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .aboutMe .mainInfo {
+    height: 80%;
+    width: 60%;
+    padding: 20px;
+    font-family: "Inter", sans-serif; }
+    .aboutMe .mainInfo .nombre {
+      width: 100%;
+      font-size: calc(7px + 1.4vw);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end; }
+      .aboutMe .mainInfo .nombre .nombres {
+        font-weight: lighter; }
+      .aboutMe .mainInfo .nombre .apellidos {
+        font-size: larger;
+        text-align: left;
+        font-weight: lighter;
+        color: #00b9b9; }
+    .aboutMe .mainInfo .info {
+      height: 45vh;
+      width: 100%;
+      font-size: calc(10px + 1.4vw);
+      font-weight: lighter;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+  .aboutMe .globoTechs {
+    min-height: 350px;
+    height: 350px;
+    min-width: 350px;
+    width: 350px;
+    padding: 2%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    animation: rotacion 25s linear 0s infinite;
+    position: relative;
+    top: -40%; }
+    .aboutMe .globoTechs .tech {
+      width: 10%;
+      flex: 1 1 100px;
+      text-align: center;
+      animation: rotaciont 25s linear 0s infinite;
+      position: relative;
+      bottom: -10px;
+      font-family: "Inter", sans-serif;
+      font-weight: bolder;
+      color: #00b9b9; }
+    .aboutMe .globoTechs .lat {
+      position: relative;
+      bottom: -55px; }
+    .aboutMe .globoTechs .centl {
+      position: relative;
+      left: -30px; }
+    .aboutMe .globoTechs .centr {
+      position: relative;
+      right: -30px; }
+
+@keyframes rotacion {
+  from {
+    rotate: 0; }
+  to {
+    rotate: 360deg; } }
+
+@keyframes rotaciont {
+  from {
+    rotate: 0; }
+  to {
+    rotate: -360deg; } }
+
+@media (max-width: 800px) {
+  .aboutMe {
+    flex-direction: column;
+    position: relative;
+    top: -100px; }
+    .aboutMe .content {
+      position: relative;
+      top: -20%; }
+  .globoTechs {
+    transform: scale(0.8); }
+  .mainInfo {
+    min-width: 80%; } }

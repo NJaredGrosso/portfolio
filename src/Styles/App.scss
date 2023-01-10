@@ -5,8 +5,11 @@
 	padding: 0;
 }
 
-App {
+
+
+.App {
 	height: 100%;
-	width: 100vw;
+	width: 100%;
 	background-color: $fondo;
+	overflow: hidden;
 }
