@@ -17,8 +17,9 @@ function AboutMe() {
 						<p>
 							I’m a Web developer from Argentina. My passion for the coding
 							started when I was young and started using the computer, all the
-							things that the computers could do impressed me. So I decided to
-							become the person who do all this things possible.
+							things you could do with the computer amazed me. That's why I
+							decided to be the person who can make all this possible so that
+							others can enjoy it as I do.
 						</p>
 						<p>
 							I love JavaScript and the things that can be done with it. It’s my

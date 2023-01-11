@@ -6,13 +6,13 @@ export default function NavBar() {
 	const navigate = useNavigate();
 
 	const navToHome = () => {
-		navigate("/Portfolio");
+		navigate("/portfolio");
 	};
 	const navToProjects = () => {
-		navigate("/Portfolio/projects");
+		navigate("/portfolio/projects");
 	};
 	const navToAboutMe = () => {
-		navigate("/Portfolio/about-me");
+		navigate("/portfolio/about-me");
 	};
 
 	return (

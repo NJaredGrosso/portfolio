@@ -11,9 +11,9 @@ function App() {
 			<BrowserRouter>
 				<NavBar />
 				<Routes>
-					<Route path="/Portfolio" element={<Home />} />
-					<Route path="/Portfolio/projects" element={<Projects />} />
-					<Route path="/Portfolio/about-me" element={<AboutMe />} />
+					<Route path="/portfolio" element={<Home />} />
+					<Route path="/portfolio/projects" element={<Projects />} />
+					<Route path="/portfolio/about-me" element={<AboutMe />} />
 				</Routes>
 			</BrowserRouter>
 		</div>
